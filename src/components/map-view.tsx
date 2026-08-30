@@ -1,7 +1,28 @@
 import type { Item } from '@/data/schema';
 
-/** Approximate NZ bounding box used to normalise map coordinates. */
-const BOUNDS = { north: -34.4, south: -46.7, west: 166.4, east: 178.6 } as const;
+/** Fallback bounds (all of New Zealand) used when no listing has coordinates. */
+const NZ_BOUNDS = { north: -34.4, south: -46.7, west: 166.4, east: 178.6 } as const;
+
+/**
+ * Fit bounds to the listings themselves (with padding) so a single-region
+ * directory zooms into its cluster instead of spreading the whole country.
+ *
+ * @param items - Listings with coordinates
+ * @returns Bounding box covering every coordinate, or the NZ fallback
+ */
+function fitBounds(items: Item[]) {
+  const withCoords = items.filter((item) => item.lat !== undefined && item.lng !== undefined);
+  if (withCoords.length === 0) return NZ_BOUNDS;
+  const lats = withCoords.map((item) => item.lat as number);
+  const lngs = withCoords.map((item) => item.lng as number);
+  const pad = 0.08;
+  return {
+    north: Math.max(...lats) + (Math.max(...lats) - Math.min(...lats)) * pad,
+    south: Math.min(...lats) - (Math.max(...lats) - Math.min(...lats)) * pad,
+    west: Math.min(...lngs) - (Math.max(...lngs) - Math.min(...lngs)) * pad,
+    east: Math.max(...lngs) + (Math.max(...lngs) - Math.min(...lngs)) * pad,
+  };
+}
 
 /**
  * Dependency-free SVG map: plots listings from their lat/lng onto a simple
@@ -16,11 +37,12 @@ const BOUNDS = { north: -34.4, south: -46.7, west: 166.4, east: 178.6 } as const
  */
 export function MapView({ items, region }: { items: Item[]; region: string }): React.ReactElement {
   const withCoords = items.filter((item) => item.lat !== undefined && item.lng !== undefined);
+  const bounds = fitBounds(items);
   const width = 600;
   const height = 480;
   const project = (lat: number, lng: number): { x: number; y: number } => ({
-    x: ((lng - BOUNDS.west) / (BOUNDS.east - BOUNDS.west)) * width,
-    y: ((BOUNDS.north - lat) / (BOUNDS.north - BOUNDS.south)) * height,
+    x: ((lng - bounds.west) / (bounds.east - bounds.west)) * width,
+    y: ((bounds.north - lat) / (bounds.north - bounds.south)) * height,
   });
   return (
     <svg

@@ -40,11 +40,15 @@ describe('dataset export helpers', () => {
     expect(cities[0].count).toBeGreaterThanOrEqual(cities[cities.length - 1].count);
     expect(cities.find((c) => c.city === 'Wellington')?.count).toBeGreaterThan(0);
     const categories = countByCategory(seedItems);
-    expect(categories.some((c) => c.category === 'example')).toBe(true);
+    expect(categories.some((c) => c.category === 'charity')).toBe(true);
   });
 
   it('lists distinct source labels sorted', () => {
-    expect(listSourceLabels(seedItems)).toEqual(['Template seed data']);
+    expect(listSourceLabels(seedItems)).toEqual([
+      'Mary Potter Hospice shop locations',
+      'Salvation Army Family Store locator',
+      'Vinnies shop locations',
+    ]);
   });
 
   it('builds dataset meta from an export', () => {

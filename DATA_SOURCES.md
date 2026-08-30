@@ -8,8 +8,10 @@ Vercel Cron, and record every run in `scrapes` (DB mode) or
 
 | Source | What we get | Status |
 | --- | --- | --- |
-| `example-listings` (this repo's `scripts/examples/listing-entries.json`) | seed pipeline demo | ✅ offline demo |
-
+| Mary Potter Hospice shop locations (`marypotter.org.nz/shops/shop-locations-and-hours/`) | 8 Wellington region hospice shops, addresses, phones, hours | ✅ curated 2026-08-30 |
+| Vinnies shop locations (`svdp.org.nz/our-shops/`) | 8 Wellington region St Vincent de Paul shops | ✅ curated 2026-08-30 |
+| Salvation Army Family Store locator (`salvationarmy.org.nz/location/*-family-store/`) | 11 Wellington region Family Stores | ✅ curated 2026-08-30 |
+| OpenStreetMap Nominatim | coordinates for every listing | ✅ curated 2026-08-30 |
 <!-- SEED-SOURCES -->
 
 Projects run `pnpm run setup` to list their own initial sources here; the
@@ -29,7 +31,8 @@ scraper framework in `src/lib/scrapers/` turns each into a `Scraper`.
 
 ## Planned
 
-- Real scrapers for the project's seed sources, replacing the example
+- Scrapers for SPCA, Red Cross and independent op shops (addresses live
+  behind JS maps on those sites — headless-browser pass needed)
 - Headless-browser fallback for JS-rendered listing pages
 - Enrichment passes (socials, contact, coordinates) with sources per field
 

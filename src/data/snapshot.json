@@ -1,78 +1,700 @@
 {
   "version": "seed",
-  "exportedAt": "2026-08-29T08:18:28.574Z",
+  "exportedAt": "2026-08-30T10:53:41.712Z",
   "license": "Public data only. Opt-out respected — see /opt-out.",
   "items": [
     {
-      "id": "example-place-one",
-      "name": "Example Place One",
-      "slug": "example-place-one",
-      "city": "Wellington",
-      "region": "Wellington region",
-      "location": "CBD",
-      "lat": -41.2904,
-      "lng": 174.7787,
-      "website": "https://example.com",
-      "categories": ["example"],
-      "description": "Placeholder listing proving the template pipeline: replace this file with real data.",
-      "source": {
-        "label": "Template seed data",
-        "url": "https://example.com"
-      },
-      "lastVerified": "2026-08-01",
-      "verified": false,
-      "active": true,
-      "optOut": false,
-      "calendarDates": []
-    },
-    {
-      "id": "example-place-two",
-      "name": "Example Place Two",
-      "slug": "example-place-two",
+      "id": "mary-potter-cuba-street",
+      "name": "Mary Potter Hospice Shop Cuba Street",
+      "slug": "mary-potter-cuba-street",
       "city": "Wellington",
       "region": "Wellington region",
       "location": "Te Aro",
-      "lat": -41.2939,
-      "lng": 174.7826,
-      "website": "https://example.com",
-      "categories": ["example", "family"],
-      "description": "Second placeholder listing with calendar dates for the iCal feed.",
-      "source": {
-        "label": "Template seed data",
-        "url": "https://example.com"
+      "lat": -41.296545,
+      "lng": 174.7735355,
+      "contact": {
+        "phone": "04 213 8382"
       },
-      "lastVerified": "2026-08-01",
-      "verified": false,
+      "website": "https://marypotter.org.nz/shops/",
+      "categories": ["charity", "clothing", "homeware"],
+      "description": "Hospice op shop on Cuba Street selling pre-loved clothing, homeware and more.",
+      "source": {
+        "label": "Mary Potter Hospice shop locations",
+        "url": "https://marypotter.org.nz/shops/shop-locations-and-hours/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": true,
       "active": true,
       "optOut": false,
-      "calendarDates": [
-        {
-          "start": "2026-09-05",
-          "label": "Market day"
-        }
-      ]
+      "calendarDates": [],
+      "notes": "Mon-Sat 10am-5pm, Sun 11am-3pm."
     },
     {
-      "id": "example-place-three",
-      "name": "Example Place Three",
-      "slug": "example-place-three",
+      "id": "mary-potter-kelburn",
+      "name": "Mary Potter Hospice Shop Kelburn",
+      "slug": "mary-potter-kelburn",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Kelburn",
+      "lat": -41.2887611,
+      "lng": 174.7650454,
+      "contact": {
+        "phone": "04 830 1680"
+      },
+      "website": "https://marypotter.org.nz/shops/",
+      "categories": ["charity", "clothing", "homeware"],
+      "description": "Hospice op shop on Upland Road near the Kelburn village shops.",
+      "source": {
+        "label": "Mary Potter Hospice shop locations",
+        "url": "https://marypotter.org.nz/shops/shop-locations-and-hours/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "Mon-Sat 10am-5pm, Sun 11am-3pm."
+    },
+    {
+      "id": "mary-potter-karori",
+      "name": "Mary Potter Hospice Shop Karori",
+      "slug": "mary-potter-karori",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Karori",
+      "lat": -41.2849192,
+      "lng": 174.7372941,
+      "contact": {
+        "phone": "04 476 0381"
+      },
+      "website": "https://marypotter.org.nz/shops/",
+      "categories": ["charity", "clothing", "homeware"],
+      "description": "Hospice op shop on Karori Road in the Karori village.",
+      "source": {
+        "label": "Mary Potter Hospice shop locations",
+        "url": "https://marypotter.org.nz/shops/shop-locations-and-hours/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "Mon-Sat 10am-4pm, Sun 10am-2pm."
+    },
+    {
+      "id": "mary-potter-miramar",
+      "name": "Mary Potter Hospice Shop Miramar",
+      "slug": "mary-potter-miramar",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Miramar",
+      "lat": -41.3089869,
+      "lng": 174.8217166,
+      "contact": {
+        "phone": "04 380 7057"
+      },
+      "website": "https://marypotter.org.nz/shops/",
+      "categories": ["charity", "clothing", "homeware"],
+      "description": "Hospice op shop on Park Road in Miramar.",
+      "source": {
+        "label": "Mary Potter Hospice shop locations",
+        "url": "https://marypotter.org.nz/shops/shop-locations-and-hours/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "Mon-Sat 10am-4pm, Sun 11am-3pm."
+    },
+    {
+      "id": "mary-potter-newlands",
+      "name": "Mary Potter Hospice Shop Newlands",
+      "slug": "mary-potter-newlands",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Newlands",
+      "lat": -41.222662,
+      "lng": 174.822934,
+      "contact": {
+        "phone": "04 477 4115"
+      },
+      "website": "https://marypotter.org.nz/shops/",
+      "categories": ["charity", "clothing", "homeware"],
+      "description": "Hospice op shop in McMillan Court, Newlands.",
+      "source": {
+        "label": "Mary Potter Hospice shop locations",
+        "url": "https://marypotter.org.nz/shops/shop-locations-and-hours/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "Mon-Sat 10am-4pm, Sun 11am-3pm."
+    },
+    {
+      "id": "mary-potter-porirua",
+      "name": "Mary Potter Hospice Shop Porirua",
+      "slug": "mary-potter-porirua",
+      "city": "Porirua",
+      "region": "Wellington region",
+      "location": "Kenepuru",
+      "lat": -41.1413528,
+      "lng": 174.8423004,
+      "contact": {
+        "phone": "04 237 2313"
+      },
+      "website": "https://marypotter.org.nz/shops/",
+      "categories": ["charity", "clothing", "homeware"],
+      "description": "Hospice op shop on Kenepuru Drive, Porirua.",
+      "source": {
+        "label": "Mary Potter Hospice shop locations",
+        "url": "https://marypotter.org.nz/shops/shop-locations-and-hours/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "Mon-Sat 9am-4pm, Sun 11am-3pm."
+    },
+    {
+      "id": "mary-potter-tawa",
+      "name": "Mary Potter Hospice Shop Tawa",
+      "slug": "mary-potter-tawa",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Tawa",
+      "lat": -41.1691561,
+      "lng": 174.8247791,
+      "contact": {
+        "phone": "04 232 7798"
+      },
+      "website": "https://marypotter.org.nz/shops/",
+      "categories": ["charity", "clothing", "homeware"],
+      "description": "Hospice op shop on Main Road, Tawa.",
+      "source": {
+        "label": "Mary Potter Hospice shop locations",
+        "url": "https://marypotter.org.nz/shops/shop-locations-and-hours/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "Mon-Fri 10am-4pm, Sat 10am-2pm, Sun closed."
+    },
+    {
+      "id": "mary-potter-thorndon",
+      "name": "Mary Potter Hospice Shop Thorndon",
+      "slug": "mary-potter-thorndon",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Thorndon",
+      "lat": -41.2754768,
+      "lng": 174.7829065,
+      "contact": {
+        "phone": "04 472 5819"
+      },
+      "website": "https://marypotter.org.nz/shops/",
+      "categories": ["charity", "clothing", "homeware"],
+      "description": "Hospice op shop on Thorndon Quay.",
+      "source": {
+        "label": "Mary Potter Hospice shop locations",
+        "url": "https://marypotter.org.nz/shops/shop-locations-and-hours/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "Mon-Fri 10am-4pm, Sat 10am-2pm, Sun closed."
+    },
+    {
+      "id": "vinnies-porirua",
+      "name": "Vinnies Porirua",
+      "slug": "vinnies-porirua",
+      "city": "Porirua",
+      "region": "Wellington region",
+      "location": "Porirua East",
+      "lat": -41.1392309,
+      "lng": 174.8497955,
+      "contact": {
+        "phone": "04 237 5968"
+      },
+      "website": "https://svdp.org.nz/our-shops/",
+      "categories": ["charity", "clothing", "homeware"],
+      "description": "St Vincent de Paul op shop on Mungavin Avenue.",
+      "source": {
+        "label": "Vinnies shop locations",
+        "url": "https://svdp.org.nz/our-shops/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "Mon 9am-3pm, Tue-Fri 9am-4pm, Sat 9am-3pm, Sun closed."
+    },
+    {
+      "id": "vinnies-petone",
+      "name": "Vinnies Petone",
+      "slug": "vinnies-petone",
       "city": "Lower Hutt",
       "region": "Wellington region",
       "location": "Petone",
-      "lat": -41.2256,
-      "lng": 174.8735,
-      "website": "https://example.com",
-      "categories": ["example", "thrift"],
-      "description": "Third placeholder listing outside the start city.",
-      "source": {
-        "label": "Template seed data",
-        "url": "https://example.com"
+      "lat": -41.2266762,
+      "lng": 174.882442,
+      "contact": {
+        "phone": "04 568 6408"
       },
-      "lastVerified": "2025-01-15",
-      "verified": false,
+      "website": "https://svdp.org.nz/our-shops/",
+      "categories": ["charity", "clothing", "homeware"],
+      "description": "St Vincent de Paul op shop on Jackson Street, Petone.",
+      "source": {
+        "label": "Vinnies shop locations",
+        "url": "https://svdp.org.nz/our-shops/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": true,
       "active": true,
       "optOut": false,
-      "calendarDates": []
+      "calendarDates": [],
+      "notes": "Mon-Sat 10am-4pm."
+    },
+    {
+      "id": "vinnies-newtown",
+      "name": "Vinnies Newtown",
+      "slug": "vinnies-newtown",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Newtown",
+      "lat": -41.3077126,
+      "lng": 174.778043,
+      "contact": {
+        "phone": "04 389 7122"
+      },
+      "website": "https://svdp.org.nz/our-shops/",
+      "categories": ["charity", "clothing", "homeware"],
+      "description": "St Vincent de Paul op shop on Riddiford Street, Newtown.",
+      "source": {
+        "label": "Vinnies shop locations",
+        "url": "https://svdp.org.nz/our-shops/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "Mon-Sat 9am-5pm."
+    },
+    {
+      "id": "vinnies-khandallah",
+      "name": "Vinnies Khandallah",
+      "slug": "vinnies-khandallah",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Khandallah",
+      "lat": -41.2475367,
+      "lng": 174.7918508,
+      "website": "https://svdp.org.nz/our-shops/",
+      "categories": ["charity", "clothing", "homeware"],
+      "description": "St Vincent de Paul op shop on Ganges Road opposite the village hall.",
+      "source": {
+        "label": "Vinnies shop locations",
+        "url": "https://svdp.org.nz/our-shops/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "Mon-Sat 9am-4:30pm."
+    },
+    {
+      "id": "vinnies-kelburn",
+      "name": "Vinnies Kelburn",
+      "slug": "vinnies-kelburn",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Kelburn",
+      "lat": -41.2888442,
+      "lng": 174.7617348,
+      "contact": {
+        "phone": "04 475 3392"
+      },
+      "website": "https://svdp.org.nz/our-shops/",
+      "categories": ["charity", "clothing", "homeware"],
+      "description": "St Vincent de Paul op shop on Upland Road, Kelburn.",
+      "source": {
+        "label": "Vinnies shop locations",
+        "url": "https://svdp.org.nz/our-shops/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "Mon-Fri 9am-5:30pm, Sat 9am-4:30pm."
+    },
+    {
+      "id": "vinnies-brooklyn",
+      "name": "Vinnies Brooklyn",
+      "slug": "vinnies-brooklyn",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Brooklyn",
+      "lat": -41.3050494,
+      "lng": 174.7634677,
+      "website": "https://svdp.org.nz/our-shops/",
+      "categories": ["charity", "clothing", "homeware"],
+      "description": "St Vincent de Paul op shop on Ohiro Road, Brooklyn.",
+      "source": {
+        "label": "Vinnies shop locations",
+        "url": "https://svdp.org.nz/our-shops/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "Tue-Sat 9am-5pm."
+    },
+    {
+      "id": "vinnies-kilbirnie",
+      "name": "Vinnies Kilbirnie",
+      "slug": "vinnies-kilbirnie",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Kilbirnie",
+      "lat": -41.3179397,
+      "lng": 174.7945587,
+      "contact": {
+        "phone": "04 387 7438"
+      },
+      "website": "https://svdp.org.nz/our-shops/",
+      "categories": ["charity", "clothing", "homeware"],
+      "description": "St Vincent de Paul op shop on Rongotai Road, Kilbirnie.",
+      "source": {
+        "label": "Vinnies shop locations",
+        "url": "https://svdp.org.nz/our-shops/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "Mon-Sat 9am-4:30pm."
+    },
+    {
+      "id": "vinnies-aro-street",
+      "name": "Vinnies Aro Street",
+      "slug": "vinnies-aro-street",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Aro Valley",
+      "lat": -41.2953896,
+      "lng": 174.7660321,
+      "website": "https://svdp.org.nz/our-shops/",
+      "categories": ["charity", "clothing", "homeware"],
+      "description": "St Vincent de Paul op shop on Aro Street, Aro Valley.",
+      "source": {
+        "label": "Vinnies shop locations",
+        "url": "https://svdp.org.nz/our-shops/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "Mon-Sat 9am-4:30pm."
+    },
+    {
+      "id": "salvos-newtown",
+      "name": "Salvation Army Family Store Newtown",
+      "slug": "salvos-newtown",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Newtown",
+      "lat": -41.3150706,
+      "lng": 174.7806332,
+      "contact": {
+        "phone": "04 389 4583"
+      },
+      "website": "https://www.salvationarmy.org.nz/help-us/family-stores/",
+      "categories": ["charity", "clothing", "homeware", "furniture"],
+      "description": "Salvation Army Family Store on Riddiford Street, Newtown.",
+      "source": {
+        "label": "Salvation Army Family Store locator",
+        "url": "https://www.salvationarmy.org.nz/location/newtown-family-store/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "Mon-Fri 9am-5:30pm, Sat 10am-4pm."
+    },
+    {
+      "id": "salvos-johnsonville",
+      "name": "Salvation Army Family Store Johnsonville",
+      "slug": "salvos-johnsonville",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Johnsonville",
+      "lat": -41.2226832,
+      "lng": 174.8072619,
+      "contact": {
+        "phone": "04 477 4869"
+      },
+      "website": "https://www.salvationarmy.org.nz/help-us/family-stores/",
+      "categories": ["charity", "clothing", "homeware", "furniture"],
+      "description": "Salvation Army Family Store on Johnsonville Road.",
+      "source": {
+        "label": "Salvation Army Family Store locator",
+        "url": "https://www.salvationarmy.org.nz/location/johnsonville-family-store/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "Mon-Fri 9am-5pm, Sat 9:30am-5pm."
+    },
+    {
+      "id": "salvos-karori",
+      "name": "Salvation Army Family Store Karori",
+      "slug": "salvos-karori",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Karori",
+      "lat": -41.2845161,
+      "lng": 174.7373122,
+      "contact": {
+        "phone": "04 476 0239"
+      },
+      "website": "https://www.salvationarmy.org.nz/help-us/family-stores/",
+      "categories": ["charity", "clothing", "homeware", "furniture"],
+      "description": "Salvation Army Family Store on Parkvale Road, Karori.",
+      "source": {
+        "label": "Salvation Army Family Store locator",
+        "url": "https://www.salvationarmy.org.nz/location/karori-family-store/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "Mon-Sat 9am-5pm."
+    },
+    {
+      "id": "salvos-kilbirnie",
+      "name": "Salvation Army Family Store Kilbirnie",
+      "slug": "salvos-kilbirnie",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Kilbirnie",
+      "lat": -41.319623,
+      "lng": 174.7960205,
+      "contact": {
+        "phone": "04 387 7271"
+      },
+      "website": "https://www.salvationarmy.org.nz/help-us/family-stores/",
+      "categories": ["charity", "clothing", "homeware", "furniture"],
+      "description": "Salvation Army Family Store on Onepu Road, Kilbirnie.",
+      "source": {
+        "label": "Salvation Army Family Store locator",
+        "url": "https://www.salvationarmy.org.nz/location/kilbirnie-family-store/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "Mon-Fri 9am-5pm, Sat 9:30am-4:30pm."
+    },
+    {
+      "id": "salvos-miramar",
+      "name": "Salvation Army Family Store Miramar",
+      "slug": "salvos-miramar",
+      "city": "Wellington",
+      "region": "Wellington region",
+      "location": "Miramar",
+      "lat": -41.3157887,
+      "lng": 174.815609,
+      "contact": {
+        "phone": "04 380 9140"
+      },
+      "website": "https://www.salvationarmy.org.nz/help-us/family-stores/",
+      "categories": ["charity", "clothing", "homeware", "furniture"],
+      "description": "Salvation Army Family Store on Miramar Avenue.",
+      "source": {
+        "label": "Salvation Army Family Store locator",
+        "url": "https://www.salvationarmy.org.nz/location/miramar-family-store/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "Mon-Fri 9am-5pm, Sat 9:30am-4:30pm."
+    },
+    {
+      "id": "salvos-lower-hutt",
+      "name": "Salvation Army Family Store Lower Hutt",
+      "slug": "salvos-lower-hutt",
+      "city": "Lower Hutt",
+      "region": "Wellington region",
+      "location": "Hutt Central",
+      "lat": -41.2079,
+      "lng": 174.9138,
+      "contact": {
+        "phone": "04 570 0276"
+      },
+      "website": "https://www.salvationarmy.org.nz/help-us/family-stores/",
+      "categories": ["charity", "clothing", "homeware", "furniture"],
+      "description": "Salvation Army Family Store at the corner of Cornwall Street and Kings Crescent.",
+      "source": {
+        "label": "Salvation Army Family Store locator",
+        "url": "https://www.salvationarmy.org.nz/location/lower-hutt-family-store/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "Mon-Fri 9am-5:30pm, Sat 9am-5pm."
+    },
+    {
+      "id": "salvos-upper-hutt",
+      "name": "Salvation Army Family Store Upper Hutt",
+      "slug": "salvos-upper-hutt",
+      "city": "Upper Hutt",
+      "region": "Wellington region",
+      "location": "Upper Hutt Central",
+      "lat": -41.1226744,
+      "lng": 175.0741705,
+      "contact": {
+        "phone": "04 528 6951"
+      },
+      "website": "https://www.salvationarmy.org.nz/help-us/family-stores/",
+      "categories": ["charity", "clothing", "homeware", "furniture"],
+      "description": "Salvation Army Family Store on Queen Street, Upper Hutt.",
+      "source": {
+        "label": "Salvation Army Family Store locator",
+        "url": "https://www.salvationarmy.org.nz/location/upper-hutt-family-store/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "Mon-Fri 9am-5pm, Sat 9:30am-4pm."
+    },
+    {
+      "id": "salvos-petone",
+      "name": "Salvation Army Family Store Petone",
+      "slug": "salvos-petone",
+      "city": "Lower Hutt",
+      "region": "Wellington region",
+      "location": "Petone",
+      "lat": -41.2262549,
+      "lng": 174.881168,
+      "contact": {
+        "phone": "04 568 9613"
+      },
+      "website": "https://www.salvationarmy.org.nz/help-us/family-stores/",
+      "categories": ["charity", "clothing", "homeware", "furniture"],
+      "description": "Salvation Army Family Store on Jackson Street, Petone.",
+      "source": {
+        "label": "Salvation Army Family Store locator",
+        "url": "https://www.salvationarmy.org.nz/location/petone-family-store/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "Mon-Sat 9am-5pm."
+    },
+    {
+      "id": "salvos-porirua",
+      "name": "Salvation Army Family Store Porirua",
+      "slug": "salvos-porirua",
+      "city": "Porirua",
+      "region": "Wellington region",
+      "location": "Porirua City Centre",
+      "lat": -41.1300136,
+      "lng": 174.8393769,
+      "contact": {
+        "phone": "04 238 2375"
+      },
+      "website": "https://www.salvationarmy.org.nz/help-us/family-stores/",
+      "categories": ["charity", "clothing", "homeware", "furniture"],
+      "description": "Salvation Army Family Store on Parumoana Street, Porirua.",
+      "source": {
+        "label": "Salvation Army Family Store locator",
+        "url": "https://www.salvationarmy.org.nz/location/porirua-family-store/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "Mon-Fri 9:30am-5:30pm, Sat 9:30am-5pm."
+    },
+    {
+      "id": "salvos-plimmerton",
+      "name": "Salvation Army Family Store Plimmerton",
+      "slug": "salvos-plimmerton",
+      "city": "Porirua",
+      "region": "Wellington region",
+      "location": "Plimmerton",
+      "lat": -41.082141,
+      "lng": 174.865403,
+      "contact": {
+        "phone": "04 233 1313"
+      },
+      "website": "https://www.salvationarmy.org.nz/help-us/family-stores/",
+      "categories": ["charity", "clothing", "homeware", "furniture"],
+      "description": "Salvation Army Family Store on Steyne Avenue, Plimmerton.",
+      "source": {
+        "label": "Salvation Army Family Store locator",
+        "url": "https://www.salvationarmy.org.nz/location/plimmerton-family-store/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "Mon-Fri 9am-4:30pm, Sat 9am-4pm."
+    },
+    {
+      "id": "salvos-tawa",
+      "name": "Salvation Army Family Store Tawa",
+      "slug": "salvos-tawa",
+      "city": "Porirua",
+      "region": "Wellington region",
+      "location": "Kenepuru",
+      "lat": -41.1510872,
+      "lng": 174.832626,
+      "contact": {
+        "phone": "04 232 7934"
+      },
+      "website": "https://www.salvationarmy.org.nz/help-us/family-stores/",
+      "categories": ["charity", "clothing", "homeware", "furniture"],
+      "description": "Salvation Army Family Store on Kenepuru Drive (listed as Tawa store).",
+      "source": {
+        "label": "Salvation Army Family Store locator",
+        "url": "https://www.salvationarmy.org.nz/location/tawa-family-store/"
+      },
+      "lastVerified": "2026-08-30",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "Mon-Sat 9am-5pm."
     }
   ]
 }

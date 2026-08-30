@@ -37,7 +37,7 @@ export function OptOutForm(): React.ReactElement {
         id="opt-out-id"
         name="id"
         required
-        placeholder="e.g. example-place-one"
+        placeholder="e.g. mary-potter-cuba-street"
         className="w-full rounded-lg border border-neutral-300 bg-white px-4 py-2 dark:border-neutral-700 dark:bg-neutral-900"
       />
       <button

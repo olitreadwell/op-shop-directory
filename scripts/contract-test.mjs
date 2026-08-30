@@ -45,7 +45,7 @@ async function main() {
     }
   }
 
-  const itemsRes = await fetch(`${base}/api/v1/items`);
+  const itemsRes = await fetch(`${base}/api/v1/items?limit=200`);
   const items = await itemsRes.json();
   check(Array.isArray(items.data), '/api/v1/items returns { data: [...] }');
   check(typeof items.meta?.total === 'number', '/api/v1/items returns meta.total');

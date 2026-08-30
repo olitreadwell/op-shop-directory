@@ -12,6 +12,7 @@ Vercel Cron, and record every run in `scrapes` (DB mode) or
 | Vinnies shop locations (`svdp.org.nz/our-shops/`) | 8 Wellington region St Vincent de Paul shops | ✅ curated 2026-08-30 |
 | Salvation Army Family Store locator (`salvationarmy.org.nz/location/*-family-store/`) | 11 Wellington region Family Stores | ✅ curated 2026-08-30 |
 | OpenStreetMap Nominatim | coordinates for every listing | ✅ curated 2026-08-30 |
+| "Nz op shops" Google Maps list (`maps.app.goo.gl/7HkT4U5j96SSBZJR8`) | 38 independent + chain shops (SPCA, Red Cross, Te Omanga, City Mission, Recycle Boutique, vintage) | ✅ curated 2026-08-31 |
 <!-- SEED-SOURCES -->
 
 Projects run `pnpm run setup` to list their own initial sources here; the

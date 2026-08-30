@@ -46,6 +46,7 @@ describe('dataset export helpers', () => {
   it('lists distinct source labels sorted', () => {
     expect(listSourceLabels(seedItems)).toEqual([
       'Mary Potter Hospice shop locations',
+      "Oli's Nz op shops Google Maps list",
       'Salvation Army Family Store locator',
       'Vinnies shop locations',
     ]);

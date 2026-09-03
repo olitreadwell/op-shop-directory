@@ -25,7 +25,7 @@ async function main() {
   check(paths.includes('/api/v1/items'), 'spec declares /api/v1/items');
   check(paths.includes('/api/v1/items/[id]'), 'spec declares /api/v1/items/{id}');
 
-  const itemsRes = await fetch(`${base}/api/v1/items`);
+  const itemsRes = await fetch(`${base}/api/v1/items?limit=200`);
   const items = await itemsRes.json();
   check(Array.isArray(items.data), '/api/v1/items returns { data: [...] }');
   check(typeof items.meta?.total === 'number', '/api/v1/items returns meta.total');

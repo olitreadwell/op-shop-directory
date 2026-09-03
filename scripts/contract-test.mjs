@@ -30,10 +30,10 @@ async function main() {
     for (const method of methods) {
       if (method !== 'get') continue;
       const operation = spec.paths[path][method];
-      let resolvedPath = path.replace(/\[id\]/g, 'mary-potter-cuba-street');
+      let resolvedPath = path.replace(/\[id\]/g, 'example-place-one');
       for (const param of operation.parameters ?? []) {
         if (param.in === 'path') {
-          resolvedPath = resolvedPath.replace(`{${param.name}}`, 'mary-potter-cuba-street');
+          resolvedPath = resolvedPath.replace(`{${param.name}}`, 'example-place-one');
         }
       }
       const url = new URL(`${base}${resolvedPath}`);
@@ -45,7 +45,7 @@ async function main() {
     }
   }
 
-  const itemsRes = await fetch(`${base}/api/v1/items?limit=200`);
+  const itemsRes = await fetch(`${base}/api/v1/items`);
   const items = await itemsRes.json();
   check(Array.isArray(items.data), '/api/v1/items returns { data: [...] }');
   check(typeof items.meta?.total === 'number', '/api/v1/items returns meta.total');
@@ -54,7 +54,7 @@ async function main() {
     'every item has id + name'
   );
 
-  const detailRes = await fetch(`${base}/api/v1/items/mary-potter-cuba-street`);
+  const detailRes = await fetch(`${base}/api/v1/items/example-place-one`);
   check(detailRes.status === 200, 'GET /api/v1/items/{id} resolves a seed item');
   const missingRes = await fetch(`${base}/api/v1/items/definitely-not-a-listing`);
   check(missingRes.status === 404, 'GET /api/v1/items/{id} 404 for unknown');
